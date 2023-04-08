@@ -1,0 +1,90 @@
+h1 {
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 0.01em;
+  letter-spacing: 0.15em;
+}
+
+.visor {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2em;
+  
+}
+
+#visor {
+  
+  width: 20em;
+  height: 1.5em;
+  border: none;
+  border-radius: 1em;
+  text-align: right;
+  font-size: 2em;
+  padding: 15px;
+}
+
+.container {
+  
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  
+  display: flex;
+  justify-content: center;
+  background-color: #283435;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.numbers {
+  
+  float: left;
+}
+
+.operations {
+  
+  margin-left: 1em;
+  float: right;
+  
+}
+
+.equals {
+  
+  height: 9em;
+}
+
+#only-line {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  
+  border: none;
+  border-radius: 0.2em;
+  margin: 0.6em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  font-size: 2em;
+}
+
+button:hover {
+  
+  scale: 1.05
+}
+
+body {
+  
+  margin: 25%;
+  background-color: #132A30;
+  font-family: 'MuseoModerno', cursive;
+}

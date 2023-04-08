@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <h1>Calculator</h1>
+
+    <div class="visor">
+        <input readOnly type="text" id="visor">
+    </div>
+    
+    <div class="buttons">
+          <div class="numbers">
+                <div class="container">
+                    <button onclick="execute(9)" class="number" >9</button>
+                     <button onclick="execute(8)" class="number">8</button>
+                     <button onclick="execute(7)" class="number">7</button>
+                  </div>
+
+                <div class="container">
+                    <button onclick="execute(6)" class="number">6</button>
+                    <button onclick="execute(5)" class="number">5</button>
+                     <button onclick="execute(4)" class="number">4</button>
+                </div>
+
+                <div class="container">
+                    <button onclick="execute(3)" class="number">3</button>
+                     <button onclick="execute(2)" class="number">2</button>
+                    <button onclick="execute(1)" class="number" >1</button>
+                </div>
+            
+                <div class="container">
+                    <button onclick="execute(0)" class="number">0</button>
+                </div>
+
+          </div>
+
+          <div class="operations">
+                  <button id="only-line" onclick="chooseOperator('+')">+</button>
+                  <button id="only-line" onclick="chooseOperator('-')">-</button>
+                  <button id="only-line" onclick="chooseOperator('x')">x</button>
+                  <button id="only-line"onclick="chooseOperator('÷')">÷</button>
+
+                  
+          </div>
+  
+          <div class="function-buttons">
+            <button id="only-line" class="equals" onclick="returnValue()">=</button>
+            <button id="only-line" onclick="limpar()">C</button>
+          </div>
+       </div>
+    </body>
+<html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
