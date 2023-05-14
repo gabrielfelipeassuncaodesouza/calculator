@@ -1,18 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
+    <meta charset="utf-8">
     <title>Calculator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
     <h1>Calculator</h1>
-
-    <div class="visor">
-        <input readOnly type="text" id="visor">
-    </div>
     
+    <div class="visor-div">
+        <input type="text" id="visor">
+    </div>
     <div class="buttons">
           <div class="numbers">
                 <div class="container">
@@ -40,18 +38,17 @@
           </div>
 
           <div class="operations">
-                  <button id="only-line" onclick="chooseOperator('+')">+</button>
-                  <button id="only-line" onclick="chooseOperator('-')">-</button>
-                  <button id="only-line" onclick="chooseOperator('x')">x</button>
-                  <button id="only-line"onclick="chooseOperator('÷')">÷</button>
-
-                  
+               <button class="clr" id="only-line" onclick="chooseOperator('plus')">+</button>
+               <button class="clr" id="only-line" onclick="chooseOperator('minus')">-</button>
+               <button class="clr" id="only-line" onclick="chooseOperator('times')">x</button>
+               <button class="clr" id="only-line"onclick="chooseOperator('divided')">÷</button>
           </div>
   
           <div class="function-buttons">
-            <button id="only-line" class="equals" onclick="returnValue()">=</button>
+            <button id="only-line" class="equals" onclick="calcular()">=</button>
             <button id="only-line" onclick="limpar()">C</button>
           </div>
        </div>
+       <script src="script.js"></script>
     </body>
 <html>

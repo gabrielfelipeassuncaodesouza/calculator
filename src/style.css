@@ -1,90 +1,80 @@
-h1 {
-  
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 5em;
-  margin-bottom: 0.01em;
-  letter-spacing: 0.15em;
+/* Color index::after
+
+green: text
+RED: visor
+BLUE: all buttons
+ORANGE: numbers && operations && function buttons
+*/
+
+:root {
+  --scale: 10em;
 }
 
-.visor {
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.2em;
-  
+body {
+  background-color: rgb(23, 32, 44)
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  font-size: calc(var(--scale) / 3);
+}
+
+button {
+  width: calc(var(--scale) / 5);
+  height: calc(var(--scale) / 5);
+  font-size: calc(var(--scale) / 5);
+  border-radius: calc(var(--scale) / 5);
+  margin: 0.1em;
 }
 
 #visor {
-  
-  width: 20em;
-  height: 1.5em;
-  border: none;
-  border-radius: 1em;
+  font-size: calc(var(--scale) / 5);
+  padding: calc(var(--scale) / 20);
+  width: calc(var(--scale) * 1.08);
+  height: calc(var(--scale) / 20);
+  border-radius: calc(var(--scale) / 33);
   text-align: right;
-  font-size: 2em;
-  padding: 15px;
 }
 
-.container {
-  
+.visor-div {
   display: flex;
   justify-content: center;
 }
 
 .buttons {
-  
   display: flex;
   justify-content: center;
-  background-color: #283435;
-  border-radius: 2em;
-  padding: 1em;
+  margin-top: calc(var(--scale) / 10);
 }
 
 .numbers {
-  
-  float: left;
+  border: 1px solid orangered;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
 }
 
 .operations {
-  
-  margin-left: 1em;
-  float: right;
-  
+  margin: 0 calc(var(--scale) / 20);
+  border: 1px solid orangered;
+}
+
+/* The code right down mades each element of div above stay inline
+*/
+
+#only-line {
+  display: block;
 }
 
 .equals {
-  
-  height: 9em;
+  height: calc(var(--scale) / 1.75);
 }
 
-#only-line {
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-button {
-  
-  border: none;
-  border-radius: 0.2em;
-  margin: 0.6em;
-  width: 2em;
-  height: 2em;
-  text-align: center;
-  font-size: 2em;
-}
-
-button:hover {
-  
-  scale: 1.05
-}
-
-body {
-  
-  margin: 25%;
-  background-color: #132A30;
-  font-family: 'MuseoModerno', cursive;
+.function-buttons {
+  border: 1px solid orangered;
 }

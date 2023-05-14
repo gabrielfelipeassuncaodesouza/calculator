@@ -16,9 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body>
-    
     <h1>Calculator</h1>
-
+    
     <div class="visor">
         <input readOnly type="text" id="visor">
     </div>
@@ -50,23 +49,20 @@
           </div>
 
           <div class="operations">
-                  <button id="only-line" onclick="chooseOperator('+')">+</button>
-                  <button id="only-line" onclick="chooseOperator('-')">-</button>
-                  <button id="only-line" onclick="chooseOperator('x')">x</button>
-                  <button id="only-line"onclick="chooseOperator('÷')">÷</button>
-
-                  
+               <button class="clr" id="only-line" onclick="chooseOperator('+')">+</button>
+               <button class="clr" id="only-line" onclick="chooseOperator('-')">-</button>
+               <button class="clr" id="only-line" onclick="chooseOperator('x')">x</button>
+               <button class="clr" id="only-line"onclick="chooseOperator('÷')">÷</button>
           </div>
   
           <div class="function-buttons">
-            <button id="only-line" class="equals" onclick="returnValue()">=</button>
+            <button id="only-line" class="equals" onclick="calcular()">=</button>
             <button id="only-line" onclick="limpar()">C</button>
           </div>
        </div>
     </body>
 <html>
 <!-- partial -->
-  <script  src="./script.js"></script>
-
+  
 </body>
 </html>
